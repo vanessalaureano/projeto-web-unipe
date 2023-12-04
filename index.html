@@ -13,36 +13,61 @@
 
 <body>
 
+    <!--Cabeçalho-->
+    <header>
+        <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/school.svg" alt="Logomarca da EducaSul"
+                        style="width: 2rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Acessar conta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastrar notas</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Principal-->
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-12 col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
-
-                <div class="row justify-content-center text-uppercase mb-3">
+                <div class="row justify-content-center text-uppercase mb-2">
                     <div class="col-auto">
                         <img src="img/school.svg" alt="Símbolo da escola" style="width: 6rem;">
                     </div>
                 </div>
-
                 <form class="border border-2 rounded-3 px-3 py-4">
-
                     <!--E-mail-->
                     <div class="row">
                         <div class="col">
-                            <label for="email" class="form-label fw-semibold fs-5">E-mail</label>
+                            <label for="email" class="form-label fw-semibold">E-mail</label>
                             <input type="email" name="email" id="email" class="form-control"
                                 placeholder="Digite seu e-mail" required>
                         </div>
                     </div>
-
                     <!--Senha-->
                     <div class="row mt-2">
                         <div class="col">
-                            <label for="password" class="form-label fw-semibold fs-5">Senha</label>
+                            <label for="password" class="form-label fw-semibold">Senha</label>
                             <input type="password" name="password" id="password" class="form-control"
                                 placeholder="Digite sua senha" required>
                         </div>
                     </div>
-
                     <!--Checkbox-->
                     <div class="row mt-3">
                         <div class="col">
@@ -52,7 +77,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!--Esqueci minha senha-->
                     <div class="row my-3 justify-content-center fs-6">
                         <div class="col-auto">
@@ -60,7 +84,6 @@
                                 href="#">Esqueci minha senha</a>
                         </div>
                     </div>
-
                     <!--Botão-->
                     <div class="row">
                         <div class="col">
@@ -74,14 +97,13 @@
         </div>
     </div>
 
+
     <!--Rodapé-->
+    <footer class="bg-body-tertiary bg-body-tertiary text-center text-lg-start fixed-bottom">
 
-    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
-
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            Desenvolvido por
-            <a class="text-body text-decoration-none fw-semibold" href="https://github.com/vanessalaureano"
-                target="_blank">Vanessa Laureano da Silva</a>
+        <div class="text-center p-2">
+            2023 | Desenvolvido por <a class="text-body text-decoration-none fw-semibold"
+                href="https://github.com/vanessalaureano" target="_blank">Vanessa Laureano da Silva</a>
         </div>
     </footer>
 

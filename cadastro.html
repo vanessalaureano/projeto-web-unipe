@@ -12,22 +12,52 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center align-items-center vh-98">
-            <div class="col-12 col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
 
-                <div class="row justify-content-center text-uppercase mb-3">
+    <!--Cabeçalho-->
+    <header>
+        <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/school.svg" alt="Logomarca da EducaSul"
+                        style="width: 2rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Acessar conta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastrar notas</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Principal-->
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-12 col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
+                <div class="row justify-content-center text-uppercase mb-2">
                     <div class="col-auto">
                         <img src="img/school.svg" alt="Símbolo da escola" style="width: 6rem;">
                     </div>
                 </div>
 
-                <form class="border border-2 rounded-3 px-3 py-4">
+                <form class="border border-2 rounded-3 px-2 py-3">
 
                     <!--Nome do(a) aluno(a)-->
                     <div class="row">
                         <div class="col">
-                            <label for="nome" class="form-label fw-semibold fs-5">Nome</label>
+                            <label for="nome" class="form-label fw-semibold">Nome</label>
                             <input type="text" name="nome" id="nome" class="form-control"
                                 placeholder="Digite o nome do(a) aluno(a)" required>
                         </div>
@@ -36,7 +66,7 @@
                     <!--RGM-->
                     <div class="row mt-2">
                         <div class="col">
-                            <label for="rgm" class="form-label fw-semibold fs-5">RGM</label>
+                            <label for="rgm" class="form-label fw-semibold">RGM</label>
                             <input type="number" name="rgm" id="rgm" class="form-control"
                                 placeholder="Digite o RGM do(a) aluno(a)" required>
                         </div>
@@ -45,7 +75,7 @@
                     <!--Turma-->
                     <div class="row mt-2">
                         <div class="col">
-                            <label for="rgm" class="form-label fw-semibold fs-5">Turma</label>
+                            <label for="rgm" class="form-label fw-semibold">Turma</label>
                             <input type="number" name="rgm" id="rgm" class="form-control"
                                 placeholder="Digite a turma do(a) aluno(a)" required>
                         </div>
@@ -54,14 +84,14 @@
                     <!--Notas-->
                     <div class="row mt-2">
                         <div class="col">
-                            <label for="nota-1" class="form-label fw-semibold fs-5">Nota 1</label>
+                            <label for="nota-1" class="form-label fw-semibold">Nota 1</label>
                             <input type="number" name="nota-1" id="nota-1" class="form-control"
                                 placeholder="Digite a nota 1" required>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col">
-                            <label for="nota-2" class="form-label fw-semibold fs-5">Nota 2</label>
+                            <label for="nota-2" class="form-label fw-semibold">Nota 2</label>
                             <input type="number" name="nota-2" id="nota-2" class="form-control"
                                 placeholder="Digite a nota 2" required>
                         </div>
@@ -85,11 +115,12 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Concluído</h1>
-                                    <a href="cadastro.html"><button type="button" class="btn-close" data-bs-dismiss="modal"                    aria-label="Close"></button></a>
+                                    <a href="cadastro.html"><button type="button" class="btn-close"
+                                            data-bs-dismiss="modal" aria-label="Close"></button></a>
                                 </div>
                                 <div class="modal-body">
-                                    Aluno(a) incluído(a) com sucesso!
-                                  </div>
+                                    Notas incluídas com sucesso!
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,12 +130,11 @@
     </div>
 
     <!--Rodapé-->
-    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
+    <footer class="bg-body-tertiary bg-body-tertiary text-center text-lg-start fixed-bottom">
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            Desenvolvido por
-            <a class="text-body text-decoration-none fw-semibold" href="https://github.com/vanessalaureano"
-                target="_blank">Vanessa Laureano da Silva</a>
+        <div class="text-center p-2">
+            2023 | Desenvolvido por <a class="text-body text-decoration-none fw-semibold"
+                href="https://github.com/vanessalaureano" target="_blank">Vanessa Laureano da Silva</a>
         </div>
     </footer>
 
